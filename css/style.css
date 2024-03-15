@@ -1,0 +1,13 @@
+@import url('./footer.css');
+@import url('./header.css');
+@import url('./background.css');
+@import url('./volunteerRegisterBox.css');
+@import url('./adminRegistration.css');
+@import url('./adminCreateEventBox.css');
+@import url('./adminEventPanel.css');
+@import url('./eventBoard.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}

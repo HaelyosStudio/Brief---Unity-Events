@@ -1,0 +1,76 @@
+:root {
+    --mainColor: #56E39F;
+    --secondaryColor: #465775;
+    --darkMainColor: #59C9A5;
+    --lightMainColor: #B8E3BD;
+    --borderColor: #CCCCCC;
+    --white: #FAFAFA;
+    --black: #252525;
+    --salmonColor: #EF6F6C;
+    --greyColor: #666666;
+    --textFont: "Noto Sans", sans-serif;
+    --bigTitleFont: "Righteous", sans-serif; /* Font for buttons and big titles */
+    --smallTitleFont: "Fira Sans Extra Condensed", sans-serif; /* Font small titles */
+}
+
+.eventsBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.eventsList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 100px 50px 100px;
+    gap: 50px;
+    font-family: var(--textFont);
+}
+
+.eventBox {
+    width: 500px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--borderColor);
+    border-radius: 20px;
+}
+
+.topBox {
+    width: 100%;
+    height: 200px;
+    background-image: url("./../assets/defaultEventImage.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.bottomBox {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    gap: 15px;
+    padding: 20px 10px 20px 10px;
+}
+
+.rightBox {
+    width: 325px;
+}
+
+.leftBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+    gap: 10px;
+
+    .eventDate {
+        font-size: 24px;
+    }
+
+    .eventRegion {
+        font-size: 20px;
+    }
+}

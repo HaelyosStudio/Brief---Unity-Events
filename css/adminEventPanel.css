@@ -1,0 +1,220 @@
+:root {
+    --mainColor: #56E39F;
+    --secondaryColor: #465775;
+    --darkMainColor: #59C9A5;
+    --lightMainColor: #B8E3BD;
+    --borderColor: #CCCCCC;
+    --white: #FAFAFA;
+    --black: #252525;
+    --salmonColor: #EF6F6C;
+    --greyColor: #666666;
+    --textFont: "Noto Sans", sans-serif;
+    --bigTitleFont: "Righteous", sans-serif; /* Font for buttons and big titles */
+    --smallTitleFont: "Fira Sans Extra Condensed", sans-serif; /* Font small titles */
+}
+
+@keyframes fadeInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(83%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .eventPanelBox {
+    opacity: 0;
+    transform: translateX(83%);
+  }
+  
+  .eventPanelBox.show {
+    animation: fadeInFromRight 0.3s ease-out forwards;
+  }
+
+@keyframes fadeOutToRight {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(83%);
+    }
+  }
+  
+  .eventPanelBox.hide {
+    animation: fadeOutToRight 0.3s ease-out forwards;
+  }
+  
+
+.eventPanelBox {
+    position: absolute;
+    top: 150px;
+    right: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+    height: 650px;
+    background-color: var(--white);
+    border-radius: 50px;
+
+    h2 {
+        justify-self: flex-start;
+        font-family: var(--smallTitleFont);
+        color: var(--black);
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .eventForm {
+        display: flex;
+        flex-direction: column;
+        width: 422px;
+        gap: 20px;
+        font-family: var(--textFont);
+        
+        .eventNameBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            label {
+                align-self: flex-start;
+                color: var(--greyColor);
+            }
+            
+            input {
+                width: 400px;
+                height: 40px;
+                border-radius: 8px;
+                border: 1px solid var(--borderColor);
+                background-color: var(--white);
+                padding-left: 20px;
+                font-size: 16px;
+                cursor: auto;
+            }
+        }
+        
+        .regionDateBox {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .eventRegionBox {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+    
+                label {
+                    align-self: flex-start;
+                    color: var(--greyColor);
+                }
+                
+                select {
+                    width: 260px;
+                    height: 42px;
+                    border-radius: 8px;
+                    border: 1px solid var(--borderColor);
+                    background-color: var(--white);
+                    padding-left: 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    font-family: var(--textFont);
+                }
+            }
+
+            .eventDateBox {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                font-family: var(--textFont);
+            
+                label {
+                    color: var(--greyColor);
+                }
+        
+                input {
+                    font-family: var(--textFont);
+                    width: 120px;
+                    height: 40px;
+                    padding-left: 20px;
+                    border: 1px solid var(--borderColor);
+                    background-color: var(--white);
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .eventCommentBox {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-family: var(--textFont);
+
+            label {
+                color: var(--greyColor);
+            }
+
+            textarea {
+                padding: 10px;
+                width: 422px;
+                height: 150px;
+                border: 1px solid var(--borderColor);
+                background-color: var(--white);
+                border-radius: 8px;
+                font-family: var(--textFont);
+            }
+        }
+
+        .eventButtons {
+            display: flex;
+            justify-content: center;
+            gap: 122px;
+
+            .cancelEventButton {
+                cursor: pointer;
+                width: 150px;
+                height: 50px;
+                border-radius: 50px;
+                background-color: var(--white);
+                border: 1px solid var(--salmonColor);
+                color: var(--salmonColor);
+                font-weight: 600;
+                transition-duration: 0.3s;
+            }
+    
+            .cancelEventButton:hover {
+                transition-duration: 0.3s;
+                background-color: var(--salmonColor);
+                color: var(--white);
+            }
+            
+            .validateButton {
+                cursor: pointer;
+                width: 150px;
+                height: 50px;
+                border-radius: 50px;
+                background-color: var(--salmonColor);
+                border: 1px solid var(--salmonColor);
+                color: var(--white);
+                font-weight: 600;
+                transition-duration: 0.3s;
+            }
+    
+            .validateButton:hover {
+                transition-duration: 0.3s;
+                background-color: var(--white);
+                color: var(--salmonColor);
+            }
+        }
+    }
+}

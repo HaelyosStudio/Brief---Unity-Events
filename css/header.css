@@ -1,0 +1,84 @@
+:root {
+    --mainColor: #56E39F;
+    --secondaryColor: #465775;
+    --darkMainColor: #59C9A5;
+    --lightMainColor: #B8E3BD;
+    --borderColor: #CCCCCC;
+    --white: #FAFAFA;
+    --black: #252525;
+    --salmonColor: #EF6F6C;
+    --textFont: "Noto Sans", sans-serif;
+    --bigTitleFont: "Righteous", sans-serif;
+    --smallTitleFont: "Fira Sans Extra Condensed", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.headerBox {
+    width: 100vw;
+    height: 980px;
+  }
+
+.mainNavBox {
+    margin: 10px 0px 0px 30px;
+    width: 336px;
+    height: 360px;
+}
+
+.mainLogo {
+    width: 327px;
+    height: 200px;
+}
+
+.navButtonsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.navButtonsBox .mainButton {
+    border: 2px solid var(--white);
+    border-radius: 50px;
+    width: 135px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--bigTitleFont);
+    font-size: 16px;
+    width: 135px;
+    height: 40px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.mainButton {
+    background-color: transparent;
+}
+
+.mainButton:hover {
+    background-color: var(--salmonColor);
+    transition-duration: 0.3s;
+}
+
+.secondaryButton {
+    justify-self: flex-start !important;
+    text-decoration: none;
+    font-family: var(--bigTitleFont);
+    color: var(--white);
+    transition-duration: 0.3s;
+}
+
+.secondaryButton:hover {
+    transform: translateX(10px);
+    transition-duration: 0.3s;
+    color: var(--mainColor);
+}
+

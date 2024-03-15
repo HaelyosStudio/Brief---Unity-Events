@@ -1,0 +1,85 @@
+:root {
+    --mainColor: #56E39F;
+    --secondaryColor: #465775;
+    --darkMainColor: #59C9A5;
+    --lightMainColor: #B8E3BD;
+    --borderColor: #CCCCCC;
+    --white: #FAFAFA;
+    --black: #252525;
+    --salmonColor: #EF6F6C;
+    --textFont: "Noto Sans", sans-serif;
+    --bigTitleFont: "Righteous", sans-serif; /* Font for buttons and big titles */
+    --smallTitleFont: "Fira Sans Extra Condensed", sans-serif; /* Font small titles */
+}
+
+.hidden {
+    display: none !important;
+}
+
+.outerShadow {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.volunteerRegisterBox {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    gap: 40px;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.mainRegisterText {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 440px;
+
+    h1 {
+        font-family: var(--bigTitleFont);
+        font-size: 36px;
+    }
+
+    p {
+        font-family: var(--smallTitleFont);
+        font-size: 18px;
+    }
+}
+
+.registerLoginButtons {
+    display: flex;
+    gap: 140px;
+}
+
+.coloredButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--bigTitleFont);
+    background-color: var(--salmonColor);
+    border-radius: 50px;
+    width: 150px;
+    height: 60px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .volunteerRegisterBox {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .mainRegisterText {
+        width: 275px;
+    }
+
+    .registerLoginButtons {
+        gap: 25px;
+    }
+
+    .coloredButton {
+        width: 125px;
+    }
+}

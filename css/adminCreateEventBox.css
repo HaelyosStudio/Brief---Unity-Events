@@ -1,0 +1,120 @@
+:root {
+    --mainColor: #56E39F;
+    --secondaryColor: #465775;
+    --darkMainColor: #59C9A5;
+    --lightMainColor: #B8E3BD;
+    --borderColor: #CCCCCC;
+    --white: #FAFAFA;
+    --black: #252525;
+    --salmonColor: #EF6F6C;
+    --textFont: "Noto Sans", sans-serif;
+    --bigTitleFont: "Righteous", sans-serif; /* Font for buttons and big titles */
+    --smallTitleFont: "Fira Sans Extra Condensed", sans-serif; /* Font small titles */
+}
+
+.hidden {
+    display: none !important;
+}
+
+.outerShadow {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.adminCreateBox {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    gap: 40px;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.mainCreateText {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 440px;
+
+    h1 {
+        font-family: var(--bigTitleFont);
+        font-size: 36px;
+    }
+
+    p {
+        font-family: var(--smallTitleFont);
+        font-size: 18px;
+    }
+}
+
+.createButtonBox {
+    display: flex;
+    cursor: pointer;
+}
+
+.createEventButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--bigTitleFont);
+    background-color: var(--salmonColor);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    font-size: 18px;
+    transition-duration: 0.3s;
+    transform: translateX(20px);
+    z-index: 0;
+}
+
+.plusButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 40px;
+    height: 60px;
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    color: var(--white);
+    z-index: -1;
+    transform: translateX(-50px) rotateY(90deg);
+    transition-duration: 0.15s;
+    background-color: var(--salmonColor);
+}
+
+.createButtonBox:hover .createEventButton {
+    transition-duration: 0.3s;
+    border-radius: 50px 0px 0px 50px;
+    transform: translateX(0px);
+}
+
+.createButtonBox:hover .plusButton {
+    transition: transform 0.3s 0s, border-radius 0.3s 0s, box-shadow 0.3s 0.15s;
+    transform: rotateX(0deg);
+    border-radius: 0px 50px 50px 0px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .adminCreateBox {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .mainCreateText {
+        width: 275px;
+    }
+
+    .createButtonBox {
+        gap: 25px;
+    }
+
+    .coloredButton {
+        width: 125px;
+    }
+}

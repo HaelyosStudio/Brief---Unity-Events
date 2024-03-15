@@ -1,0 +1,135 @@
+:root {
+  --mainColor: #56E39F;
+  --secondaryColor: #465775;
+  --darkMainColor: #59C9A5;
+  --lightMainColor: #B8E3BD;
+  --borderColor: #CCCCCC;
+  --white: #FAFAFA;
+  --black: #252525;
+  --salmonColor: #EF6F6C;
+  --textFont: "Noto Sans", sans-serif;
+  --bigTitleFont: "Righteous", sans-serif; /* Font for buttons and big titles */
+  --smallTitleFont: "Fira Sans Extra Condensed", sans-serif; /* Font small titles */
+  --iconetwitter : #1DA1F2;
+  --iconefacebook : #4267B2;
+  --iconelinkedin : #0a66c2;
+}
+
+.footerMainBox {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--secondaryColor);
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 20px 0px 20px 0px;
+}
+
+.footerLogosBox {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  width: 250px;
+}
+
+.footerSocialMedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+img {
+  width: 200px;
+}
+
+.facebookLogo {
+  width: 30px;
+}
+
+.twitterLogo {
+  width: 30px;
+}
+
+.linkedInLogo {
+  width: 30px;
+}
+
+.footerTextBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 500px;
+  height: 125px;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+  font-family: var(--smallTitleFont);
+}
+
+.footerMainText {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.footerCopyText {
+  font-size: 14px;
+}
+
+.listBox {
+  display: flex;
+  line-height: 1.5;
+  font-size: 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  width: 250px;
+}
+.listText {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-align: right;
+  list-style-type: none;
+  font-family: var(--smallTitleFont);
+}
+
+.listTitle {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footer li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .footerTextBox {
+    width: auto;
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .footerMainBox {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footerLogosBox {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .footerSocialMedia {
+    flex-direction: row;
+    align-self: center;
+  }
+
+  .listText {
+    text-align: center;
+  }
+}
