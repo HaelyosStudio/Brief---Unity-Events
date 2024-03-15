@@ -78,9 +78,6 @@ Mon GitHub :[![github](https://img.shields.io/badge/GitHub-100000?style=for-the-
 Mon Trello :
 [![trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)](https://trello.com/invite/b/Gxd3jH8Q/ATTI2389ddecbe07a26188642a8162f73de1A4294AD9/unity-events)
 
-Mon projet :
-[![project](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://github.com/HaelyosStudio/Brief---Unity-Events)
-
 Ma maquette Figma :
 [![figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/CbVPKGLOhMQ8JFLwk1Wxln/Unity-Events-Brief?type=design&node-id=0%3A1&mode=design&t=zuTJjhOH0daw2KAH-1)
 
